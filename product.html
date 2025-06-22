@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10%;
+      }
+
+      .btn-1 {
+        background: rgb(236, 239, 236);
+      }
+      .product-grid-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        margin-left: 0%;
+      }
+      .product-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        margin-top: 10%;
+        margin-left: 0%;
+      }
+      .product-grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        margin-top: 10%;
+        margin-left: 0%;
+      }
+      .products-card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        transition: box-shadow 0.3s;
+        position: relative;
+        margin-bottom: 10%;
+      }
+
+      .products-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .products-card img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+
+      .products-card .product-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .products-card .price {
+        font-size: 14px;
+        color: #333;
+      }
+
+      .products-card .price .original-price {
+        text-decoration: line-through;
+        color: #888;
+        font-size: 13px;
+      }
+
+      .products-card .colors {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 10px 0;
+      }
+
+      .products-card .colors div {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+      }
+
+      .products-card .rating {
+        color: #ffcc00;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      /* Discount Badge */
+      .products-card .discount-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #ff4081;
+        color: white;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 5px;
+      }
+
+      /* Icon Buttons */
+      .products-card .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .products-card .action-buttons button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .dis {
+        font-size: 12px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navSection"></nav>
+    <div class="container">
+      <div><h1>KIDS SECTION</h1></div>
+      <!-- <a href="detail.html"> -->
+      <a href="detail.html">
+        <div class="product-grid-1">
+          <!-- Product Card 1 -->
+          <div class="products-card">
+            <span class="discount-badge">-14%</span>
+            <img src="imgs/k1.jpg" alt="Kid Backpack" />
+            <div class="product-name">Kid Backpack</div>
+            <div class="rating">★★★★☆</div>
+            <div class="price">₹45.00 – ₹54.00</div>
+          </div>
+          <!-- </a> -->
+          <!-- Product Card 2 -->
+          <div class="products-card">
+            <span class="discount-badge">-14%</span>
+            <img src="imgs/k2.jpg" alt="Blue Shoes" />
+            <div class="product-name">Blue Shoes</div>
+            <div class="rating">★★★★★</div>
+            <div class="price">
+              <span class="original-price">₹138.00</span> ₹119.00
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="products-card">
+            <img src="imgs/k3.jpg" alt="Penguin Hoodie" />
+            <div class="product-name">Penguin Hoodie</div>
+            <div class="rating">★★★★☆</div>
+            <div class="price">₹60.00</div>
+          </div>
+
+          <!-- Example: Product Card 4 -->
+          <div class="products-card">
+            <img src="imgs/k4.jpg" alt="Cute Girl Shirt" />
+            <div class="product-name">Cute Girl Shirt</div>
+            <div class="rating">★★★☆☆</div>
+            <div class="price">₹105.00 – ₹110.00</div>
+          </div>
+        </div>
+      </a>
+
+      <div class="product-grid-2">
+        <!-- Product Card 1 -->
+        <div class="products-card">
+          <span class="discount-badge">-14%</span>
+          <img src="imgs/k5.jpg" alt="Kid Backpack" />
+          <div class="product-name">Kid Backpack</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">₹45.00 – ₹54.00</div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="products-card">
+          <span class="discount-badge">-14%</span>
+          <img src="imgs/k9.jpg" alt="Blue Shoes" />
+          <div class="product-name">Blue Shoes</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">
+            <span class="original-price">₹138.00</span> ₹119.00
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="products-card">
+          <img src="imgs/k7.jpg" alt="Penguin Hoodie" />
+          <div class="product-name">Penguin Hoodie</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">₹60.00</div>
+        </div>
+
+        <!-- Example: Product Card 4 -->
+        <div class="products-card">
+          <img src="imgs/k8.jpg" alt="Cute Girl Shirt" />
+          <div class="product-name">Cute Girl Shirt</div>
+          <div class="rating">★★★☆☆</div>
+          <div class="price">₹105.00 – ₹110.00</div>
+        </div>
+      </div>
+      <div class="product-grid-3">
+        <!-- Product Card 1 -->
+        <div class="products-card">
+          <span class="discount-badge">-14%</span>
+          <img src="imgs/k9.jpg" alt="Kid Backpack" />
+          <div class="product-name">Kid Backpack</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">₹45.00 – ₹54.00</div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="products-card">
+          <span class="discount-badge">-14%</span>
+          <img src="imgs/k3.jpg" alt="Blue Shoes" />
+          <div class="product-name">Blue Shoes</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">
+            <span class="original-price">₹138.00</span> ₹119.00
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="products-card">
+          <img src="imgs/k4.jpg" alt="Penguin Hoodie" />
+          <div class="product-name">Penguin Hoodie</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">₹60.00</div>
+        </div>
+
+        <div class="products-card">
+          <img src="imgs/k5.jpg" alt="Cute Girl Shirt" />
+          <div class="product-name">Cute Girl Shirt</div>
+          <div class="rating">★★★☆☆</div>
+          <div class="price">₹105.00 – ₹110.00</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+  <footer></footer>
+</html>
