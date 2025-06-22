@@ -435,7 +435,7 @@ ex:active {
 .banner {
   width: 100%;
   overflow-x: hidden;
-  background-image: url(imgs/hero-1.jpg.webp);
+  background-image: url(IMGS/hero-1.jpg.webp);
   background-size: cover;
   height: 40vw;
   padding-top: 0;
@@ -1043,7 +1043,7 @@ ex:active {
 .banner {
   width: 100%;
   overflow-x: hidden;
-  background-image: url(imgs/hero-1.jpg.webp);
+  background-image: url(IMGS/hero-1.jpg.webp);
   background-size: cover;
   background-position: center;
   height: 40vw;
